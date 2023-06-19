@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Página Interactiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+    function toggleVisibility() {
+      var hiddenDiv = document.getElementById("hiddenDiv");
+      if (hiddenDiv.style.display === "none") {
+        hiddenDiv.style.display = "block";
+      } else {
+        hiddenDiv.style.display = "none";
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Página Interactiva</h1>
+    </header>
+
+    <div class="container">
+        <h2>Bienvenido a mi página web interactiva</h2>
+        <p>Presiona el botón para mostrar u ocultar el contenido adicional:</p>
+        <button onclick="toggleVisibility()">Mostrar/Ocultar</button>
+
+        <div id="hiddenDiv" class="hidden">
+            <h3>Contenido adicional</h3>
+            <p>Este es el contenido que se muestra u oculta al hacer clic en el botón.</p>
+        </div>
+    </div>
+</body>
+</html>
